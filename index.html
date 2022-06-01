@@ -1,50 +1,57 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Valida Form</title>
-   <link rel="stylesheet" href="/style.css">
+   <title>Document</title>
+   <link rel="stylesheet" href="/css/style.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
    <main>
-      <section>
-         <div>
-            <h1>Formulário de cadastro</h1>
-            <ul>
-               <li>Nenhum campo pode estar vazio.</li>
-               <li>Usúario só poderá conter letras e/ou números.</li>
-               <li>Usúario deverá ter entre 3 e 12 caracteres.</li>
-               <li>Senha precisa ter entre 6 e 12 caracteres.</li>
-            </ul>
+      <section class="form">
+         <div class="div-container text-white">
+            <div>
+               <h1>Formulário de cadastro</h1>
+               <ul>
+                  <li>Nenhum campo pode estar vazio.</li>
+                  <li>Usúario só poderá conter letras e/ou números.</li>
+                  <li>Usúario deverá ter entre 3 e 12 caracteres.</li>
+                  <li>Senha precisa ter entre 6 e 12 caracteres.</li>
+               </ul>
+            </div>
+            <form action="/" method="POST" class="">
+               <div class="mb-3">
+                  <label class="form-label" for="name-user">Nome:</label>
+                  <input class="form-control" type="text" name="name-user" id="name-user">
+               </div>
+               <div class="mb-3">
+                  <label for="last-name-user">Sobrenome:</label>
+                  <input class="form-control" type="text" name="last-name-user" id="last-name-user">
+               </div>
+               <div class="mb-3">
+                  <label for="cpf-user">CPF:</label>
+                  <input class="form-control" type="text" name="cpf-user" id="cpf-user">
+               </div>
+               <div class="mb-3">
+                  <label for="user">Usuário:</label>
+                  <input class="form-control" type="text" name="user" id="user">
+               </div>
+               <div class="mb-3">
+                  <label for="password-user">Senha:</label>
+                  <input class="form-control" type="text" name="password-user" id="password-user">
+               </div>
+               <div class="mb-3">
+                  <label for="password-user-repeated">Repetir senha:</label>
+                  <input class="form-control" type="text" name="password-user-repeated" id="password-user-repeated">
+               </div>
+               <button class="btn btn-primary" type="submit">Enviar</button>
+            </form>
+   
          </div>
-
-         <form action="/" method="POST" class="">
-            <div>
-               <label for="name-user">Nome:</label>
-               <input type="text" name="name-user" id="name-user">
-            </div>
-            <div>
-               <label for="last-name-user">Sobrenome:</label>
-               <input type="text" name="last-name-user" id="last-name-user">
-            </div>
-            <div>
-               <label for="cpf-user">CPF:</label>
-               <input type="text" name="cpf-user" id="cpf-user">
-            </div>
-            <div>
-               <label for="password-user">Senha:</label>
-               <input type="text" name="password-user" id="password-user">
-            </div>
-            <div>
-               <label for="password-user-repeated">Repetir senha:</label>
-               <input type="text" name="password-user-repeated" id="password-user-repeated">
-            </div>
-
-         </form>
       </section>
    </main>
-   <script src="/script.js"></script>
+
 </body>
 </html>

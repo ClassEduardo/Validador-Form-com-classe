@@ -1,0 +1,27 @@
+*{
+   box-sizing: border-box;
+}
+
+body {
+   background-image: url(/img/stacked-peaks-haikei\ \(1\).svg);
+   background-size: auto;
+}
+
+.form {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: auto;
+   margin-top: 20px;
+}
+
+.div-container {
+   background-color: #004053;
+   border-radius: 1.5%;
+   padding: 15px 20px;
+   box-shadow: 3px 3px 5px black;
+}
+
+.btn {
+   width: 100%;
+}
