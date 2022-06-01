@@ -25,3 +25,7 @@ body {
 .btn {
    width: 100%;
 }
+
+.text-danger {
+   font-size: 14px;
+}
