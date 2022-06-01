@@ -32,19 +32,19 @@
                </div>
                <div class="mb-3">
                   <label for="cpf-user">CPF</label>
-                  <input class="form-control validate" type="text" name="cpf-user" id="cpf-user">
+                  <input class="form-control validate cpf" type="text" name="cpf-user" id="cpf-user">
                </div>
                <div class="mb-3">
                   <label for="user">Usuário</label>
-                  <input class="form-control validate" type="text" name="user" id="user">
+                  <input class="form-control validate user-name-tag" type="text" name="user" id="user">
                </div>
                <div class="mb-3">
                   <label for="password-user">Senha</label>
-                  <input class="form-control validate" type="text" name="password-user" id="password-user">
+                  <input class="form-control validate" type="password" name="password-user" id="password-user">
                </div>
                <div class="mb-3">
                   <label for="password-user-repeated">Repetir senha</label>
-                  <input class="form-control validate" type="text" name="password-user-repeated" id="password-user-repeated">
+                  <input class="form-control validate" type="password" name="password-user-repeated" id="password-user-repeated">
                </div>
                <button class="btn btn-primary" type="submit">Enviar</button>
             </form>
@@ -52,6 +52,7 @@
          </div>
       </section>
    </main>
-</body>
+   <script src="/js/validaCPF.js"></script>
    <script src="js/script.js"></script>
+</body>
 </html>
